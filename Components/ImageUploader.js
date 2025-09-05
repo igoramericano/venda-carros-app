@@ -4,7 +4,7 @@ import { Upload, X, Image } from "lucide-react";
 
 export default function ImageUploader({ onImageUpload, uploadedImages, removeImage, isUploading }) {
   const fileInputRef = useRef();
-
+  
   const handleFileSelect = (e) => {
     const files = e.target.files;
     if (files && files.length > 0) {
