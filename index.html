@@ -1,12 +1,342 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venda de Carros</title>
+    <title>DriveHub - Anuncie seu Carro</title>
+    
+    <style>
+        :root {
+            --cor-fundo-principal: #0d1117; /* Um azul bem escuro */
+            --cor-fundo-card: #161b22;
+            --cor-texto-claro: #e6e6e6;
+            --cor-texto-secundario: #a0a0a0;
+            --cor-destaque-primaria: #007bff; /* Azul vibrante */
+            --cor-destaque-secundaria: #ff4d4f; /* Vermelho esportivo */
+            --cor-borda: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--cor-fundo-principal);
+            color: var(--cor-texto-claro);
+            padding-top: 5rem; /* Espaço para o menu fixo no topo */
+            line-height: 1.6;
+        }
+
+        /* --- Menu de Navegação Fixo --- */
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-menu .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--cor-destaque-secundaria);
+        }
+        
+        /* Botão do Hamburguer (3 tracinhos) */
+        .hamburger-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        .hamburger-icon span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--cor-texto-claro);
+            border-radius: 5px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .nav-menu.active .hamburger-icon span:nth-child(1) {
+            transform: translateY(10px) rotate(45deg);
+        }
+        .nav-menu.active .hamburger-icon span:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-menu.active .hamburger-icon span:nth-child(3) {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+
+        /* Menu de Itens */
+        .menu-items {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 5rem;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 5rem);
+            background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 2rem;
+            list-style: none;
+            text-align: center;
+            transform: translateX(-100%);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .nav-menu.active .menu-items {
+            display: flex;
+            transform: translateX(0);
+        }
+
+        .menu-items li {
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-items a {
+            color: var(--cor-texto-claro);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu-items a:hover {
+            color: var(--cor-destaque-primaria);
+        }
+
+        /* --- Restante da Página --- */
+        .conteudo-principal {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .cabecalho {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .cabecalho h1 {
+            font-size: 1.8rem;
+            color: var(--cor-destaque-primaria);
+            margin-bottom: 1rem;
+        }
+
+        .barra-busca {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 2px solid var(--cor-destaque-secundaria);
+            background-color: var(--cor-fundo-card);
+            border-radius: 25px;
+            color: var(--cor-texto-claro);
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .barra-busca::placeholder {
+            color: var(--cor-texto-secundario);
+        }
+
+        .barra-busca:focus {
+            border-color: #ff8c00;
+        }
+
+        .subtitulo {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--cor-destaque-secundaria);
+            padding-left: 1rem;
+        }
+        
+        .container-anuncios {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .card-carro {
+            background-color: var(--cor-fundo-card);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card-carro:hover {
+            transform: scale(1.03); /* Animação ao passar o mouse */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .card-carro img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 2px solid var(--cor-borda);
+        }
+
+        .info-carro {
+            padding: 1rem;
+        }
+
+        .info-carro h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--cor-destaque-primaria);
+        }
+
+        .info-carro p {
+            font-size: 0.9rem;
+            color: var(--cor-texto-secundario);
+            margin-bottom: 0.3rem;
+        }
+        
+        /* Media Queries para adaptação em telas maiores */
+        @media (min-width: 768px) {
+            .nav-menu {
+                justify-content: flex-start;
+            }
+
+            .hamburger-icon {
+                display: none;
+            }
+
+            .nav-menu .logo {
+                margin-right: 2rem;
+            }
+
+            .menu-items {
+                position: static;
+                display: flex;
+                flex-direction: row;
+                height: auto;
+                background: none;
+                transform: translateX(0);
+                padding-top: 0;
+            }
+
+            .menu-items li {
+                margin: 0 1rem;
+            }
+
+            .menu-items a {
+                font-size: 1rem;
+            }
+
+            .cabecalho {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .barra-busca {
+                width: 400px;
+            }
+
+            .container-anuncios {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container-anuncios {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <nav class="nav-menu">
+        <span class="logo">DriveHub</span>
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="anunciar.html">Anunciar</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteudo-principal">
+        <header class="cabecalho">
+            <h1 style="display: none;">DriveHub</h1>
+            <input type="search" class="barra-busca" placeholder="Buscar carros, marcas ou modelos...">
+        </header>
+    
+        <main>
+            <h2 class="subtitulo">Carros em Destaque</h2>
+            <div id="container-anuncios" class="container-anuncios">
+                </div>
+        </main>
+    </div>
+
+    <script>
+        // Dados de carros fictícios com imagens do Pexels
+        const carros = [
+            { marca: 'Honda', modelo: 'Civic', ano: 2022, preco: 120000, foto: 'https://images.pexels.com/photos/10352520/pexels-photo-10352520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+            { marca: 'Ford', modelo: 'Mustang GT', ano: 2021, preco: 350000, foto: 'https://images.pexels.com/photos/20803527/pexels-photo-20803527/free-photo-of-carro-ford-mustang-gt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+            { marca: 'Toyota', modelo: 'Corolla', ano: 2023, preco: 135000, foto: 'https://images.pexels.com/photos/17226993/pexels-photo-17226993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+            { marca: 'Chevrolet', modelo: 'Camaro SS', ano: 2020, preco: 300000, foto: 'https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+            { marca: 'Volkswagen', modelo: 'Golf GTI', ano: 2024, preco: 155000, foto: 'https://images.pexels.com/photos/12391093/pexels-photo-12391093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+            { marca: 'Audi', modelo: 'A4', ano: 2023, preco: 280000, foto: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+            { marca: 'BMW', modelo: 'M3', ano: 2022, preco: 450000, foto: 'https://images.pexels.com/photos/21804155/pexels-photo-21804155/free-photo-of-bmw-m3-amarelo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+            { marca: 'Mercedes-Benz', modelo: 'C 180', ano: 2024, preco: 290000, foto: 'https://images.pexels.com/photos/100656/pexels-photo-100656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' },
+            { marca: 'Nissan', modelo: 'GT-R', ano: 2021, preco: 500000, foto: 'https://images.pexels.com/photos/14800361/pexels-photo-14800361/free-photo-of-nissan-gt-r-em-chao.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+            { marca: 'Hyundai', modelo: 'Creta', ano: 2023, preco: 140000, foto: 'https://images.pexels.com/photos/7065963/pexels-photo-7065963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' }
+        ];
+
+        // Obtém os elementos do DOM
+        const containerAnuncios = document.getElementById('container-anuncios');
+        const navMenu = document.querySelector('.nav-menu');
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+
+        // Adiciona um listener para o clique no ícone do hambúrguer
+        hamburgerIcon.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Função para formatar o preço como moeda brasileira
+        const formatarPreco = (preco) => {
+            return preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        };
+
+        // Itera sobre a lista de carros e cria o HTML para cada um
+        carros.forEach(carro => {
+            const cardHTML = `
+                <div class="card-carro">
+                    <img src="${carro.foto}" alt="Foto do ${carro.marca} ${carro.modelo}">
+                    <div class="info-carro">
+                        <h3>${carro.marca} ${carro.modelo}</h3>
+                        <p>Ano: ${carro.ano}</p>
+                        <p>Preço: <strong>${formatarPreco(carro.preco)}</strong></p>
+                    </div>
+                </div>
+            `;
+            containerAnuncios.innerHTML += cardHTML;
+        });
+    </script>
 </body>
 </html>
