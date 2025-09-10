@@ -210,6 +210,21 @@
             margin-bottom: 0.3rem;
         }
         
+        .espaco-publicidade {
+            width: 95%; /* Ocupa 95% da largura */
+            height: 250px;
+            background-color: var(--cor-fundo-card);
+            border: 2px dashed var(--cor-destaque-secundaria);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto; /* Centraliza a div e adiciona margem */
+            color: var(--cor-texto-secundario);
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
         /* Media Queries para adaptação em telas maiores */
         @media (min-width: 768px) {
             .nav-menu {
@@ -243,17 +258,15 @@
             }
 
             .cabecalho {
-                flex-direction: row;
-                justify-content: space-between;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
+                width: 100%;
             }
 
             .barra-busca {
-                width: 400px;
-            }
-
-            .container-anuncios {
-                grid-template-columns: repeat(2, 1fr);
+                width: 95%;
+                max-width: 400px;
             }
         }
 
@@ -284,12 +297,14 @@
         <header class="cabecalho">
             <h1 style="display: none;">DriveHub</h1>
             <input type="search" class="barra-busca" placeholder="Buscar carros, marcas ou modelos...">
-        </header>
-    
+            </header>
+        <div class="espaco-publicidade">
+            Espaço para publicidade
+        </div>
         <main>
             <h2 class="subtitulo">Carros em Destaque</h2>
             <div id="container-anuncios" class="container-anuncios">
-                </div>
+            </div>
         </main>
     </div>
 
