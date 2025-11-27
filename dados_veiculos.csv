@@ -1,0 +1,51 @@
+Tipo,Marca,Modelo,id,Ano,Preco,Quilometragem,Cor,is_destaque
+Motos,DAFRA,Maxsym 400i,1,2023,28205,49885,Vermelho,False
+Motos,TRIUMPH,Trident 660,2,2019,7998,35585,Azul,False
+Motos,YAMAHA,NMax 160,3,2020,26218,40260,Prata,False
+Carros,JAGUAR,F-Pace,4,2024,94484,33079,Branco,False
+Carros,MITSUBISHI,L200 Triton,5,2015,179659,62117,Branco,False
+Carros,FIAT,Cronos,6,2022,106045,2677,Azul,False
+Carros,BYD,Yuan Plus,7,2022,168770,9515,Branco,False
+Motos,ROTOM,Modelos Elétricos de Scooter e Ciclomotores,8,2019,25959,55469,Preto,False
+Motos,GCX,GCX 150,9,2020,49654,24973,Prata,False
+Carros,MINI,Cooper S,10,2024,163005,10859,Preto,False
+Carros,GWM (GREAT WALL MOTORS),Haval H6 HEV,11,2019,199925,38896,Preto,False
+Motos,DAFRA,Zongshen Fiddle III 125,12,2024,59726,64665,Branco,False
+Carros,JEEP,Renegade,13,2018,52414,45915,Preto,False
+Carros,HONDA,City Hatchback,14,2022,53832,24205,Prata,False
+Carros,JEEP,Renegade,15,2022,121319,10765,Preto,False
+Carros,MINI,Cooper S,16,2023,88385,67900,Preto,False
+Motos,BULL,Bull Commuter,17,2024,18300,64184,Azul,False
+Carros,CITROËN,C3 Aircross,18,2021,159808,3164,Branco,False
+Motos,DUCATI,Diavel,19,2020,42777,6926,Preto,False
+Motos,TRIUMPH,Scrambler 1200,20,2023,13272,63668,Azul,False
+Motos,TRIUMPH,Rocket 3 R,21,2022,56499,41100,Prata,False
+Carros,CADILLAC,Modelos Importados (Sob Demanda),22,2019,71353,31014,Vermelho,False
+Carros,FIAT,Argo,23,2018,54524,69346,Preto,False
+Carros,PORSCHE,Cayenne,24,2022,142628,44920,Azul,False
+Motos,HAOJUE,DK 150,25,2019,5455,11065,Preto,False
+Carros,FERRARI,F8 Tributo,26,2019,65962,53410,Vermelho,False
+Motos,BMW MOTORRAD,S 1000 RR,27,2020,36064,50420,Prata,False
+Motos,SUZUKI,Hayabusa,28,2018,58323,67114,Prata,False
+Carros,BMW,118i,29,2016,172649,56178,Prata,False
+Motos,VMOTO,TC Max,30,2019,64024,60551,Azul,False
+Carros,JAGUAR,E-Pace,31,2022,152225,21447,Vermelho,False
+Motos,BAJAJ,Pulsar N250,32,2022,70002,30514,Azul,False
+Carros,MASERATI,Levante,33,2015,79908,15301,Branco,False
+Motos,H.DAVIDSON (HARLEY-DAVIDSON),Heritage Classic,34,2024,38033,11372,Prata,False
+Motos,HAOJUE,DK 150,35,2020,18904,76330,Branco,False
+Carros,RENAULT,Kwid,36,2023,113179,2295,Branco,False
+Carros,VOLKSWAGEN (VW),Taos,37,2018,149861,77067,Branco,False
+Motos,ROYAL ENFIELD,Continental GT 650,38,2018,37659,79940,Vermelho,False
+Carros,BMW,X3,39,2022,151528,37351,Azul,False
+Carros,FORD,Ranger,40,2022,148372,11644,Prata,False
+Motos,SHINERAY,Jet 50,41,2023,11668,32679,Azul,False
+Carros,JAECOO,J7 (Lançamento Expectativa),42,2018,176820,68344,Preto,False
+Carros,LEXUS,NX 350h,43,2021,185490,36249,Azul,False
+Carros,MERCEDES-BENZ (M.BENZ),Classe E,44,2017,83551,36423,Branco,False
+Motos,DAFRA,Citycom S 300i,45,2024,26792,11533,Azul,False
+Motos,DAFRA,Zongshen Fiddle III 125,46,2018,30241,47283,Vermelho,False
+Motos,TRIUMPH,Speed Triple 1200 RR,47,2023,55454,5004,Vermelho,False
+Carros,BMW,530e,48,2023,95948,6344,Azul,False
+Carros,CHEVROLET (GM),Montana,49,2024,185264,48662,Branco,False
+Carros,CADILLAC,Modelos Importados (Sob Demanda),50,2019,98663,43358,Prata,False

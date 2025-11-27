@@ -1,0 +1,270 @@
+{
+  "carros": [
+    {
+      "marca": "AION",
+      "modelos": ["V", "Y", "Modelos Importados (Sob Demanda)"]
+    },
+    {
+      "marca": "AUDI",
+      "modelos": ["A3 Sedan", "A4 Avant", "Q3", "Q5", "Q8 e-tron", "e-tron GT", "RS Q8"]
+    },
+    {
+      "marca": "BMW",
+      "modelos": ["118i", "320i", "530e", "iX", "X1", "X3", "X5"]
+    },
+    {
+      "marca": "BYD",
+      "modelos": ["Dolphin", "Dolphin Mini", "Han", "Seal", "Song Plus", "Tan", "Yuan Plus"]
+    },
+    {
+      "marca": "CADILLAC",
+      "modelos": ["Modelos Importados (Sob Demanda)"]
+    },
+    {
+      "marca": "CAOA CHERY",
+      "modelos": ["Arrizo 6", "Tiggo 5X Sport", "Tiggo 7 Pro", "Tiggo 8 Max Drive"]
+    },
+    {
+      "marca": "CHEVROLET (GM)",
+      "modelos": ["Bolt EUV", "Equinox", "Montana", "Onix", "Onix Plus", "S10", "Tracker"]
+    },
+    {
+      "marca": "CITROËN",
+      "modelos": ["C3", "C3 Aircross", "C4 Cactus", "Jumpy"]
+    },
+    {
+      "marca": "DODGE",
+      "modelos": ["Modelos Importados (Sob Demanda)"]
+    },
+    {
+      "marca": "EFFA",
+      "modelos": ["Modelos de Vans e Utilitários (Sob Demanda)"]
+    },
+    {
+      "marca": "FERRARI",
+      "modelos": ["296 GTB", "F8 Tributo", "Portofino M", "Roma"]
+    },
+    {
+      "marca": "FIAT",
+      "modelos": ["Argo", "Cronos", "Fastback", "Fiorino", "Mobi", "Pulse", "Strada"]
+    },
+    {
+      "marca": "FORD",
+      "modelos": ["Bronco Sport", "Maverick", "Mustang Mach-E", "Ranger", "Transit"]
+    },
+    {
+      "marca": "GWM (GREAT WALL MOTORS)",
+      "modelos": ["Haval H6 GT", "Haval H6 HEV", "Haval H6 PHEV", "Ora 03"]
+    },
+    {
+      "marca": "HONDA",
+      "modelos": ["City Sedan", "City Hatchback", "Civic Híbrido", "CR-V Híbrido", "HR-V", "ZR-V"]
+    },
+    {
+      "marca": "HYUNDAI",
+      "modelos": ["Creta", "HB20", "HB20S", "Ioniq 5", "Kona Electric", "Santa Fe", "Tucson"]
+    },
+    {
+      "marca": "IVECO",
+      "modelos": ["Daily 35-150", "Daily 45-170", "Daily 55-170", "Daily Minibus"]
+    },
+    {
+      "marca": "JAC",
+      "modelos": ["E-JS1", "E-JS4", "iEV330P"]
+    },
+    {
+      "marca": "JAECOO",
+      "modelos": ["J7 (Lançamento Expectativa)"]
+    },
+    {
+      "marca": "JAGUAR",
+      "modelos": ["E-Pace", "F-Pace", "F-Type"]
+    },
+    {
+      "marca": "JEEP",
+      "modelos": ["Commander", "Compass", "Grand Cherokee", "Renegade"]
+    },
+    {
+      "marca": "KIA",
+      "modelos": ["Bongo", "Carnival", "Sportage", "Stonic"]
+    },
+    {
+      "marca": "LAMBORGHINI",
+      "modelos": ["Huracán", "Revuelto", "Urus"]
+    },
+    {
+      "marca": "LAND ROVER",
+      "modelos": ["Defender 90", "Defender 110", "Discovery", "Discovery Sport", "Range Rover", "Range Rover Evoque", "Range Rover Velar"]
+    },
+    {
+      "marca": "LEXUS",
+      "modelos": ["ES 300h", "NX 350h", "RX 350h", "UX 250h"]
+    },
+    {
+      "marca": "MASERATI",
+      "modelos": ["Ghibli", "Grecale", "Levante", "MC20", "Quattroporte"]
+    },
+    {
+      "marca": "MERCEDES-BENZ (M.BENZ)",
+      "modelos": ["Classe C", "Classe E", "EQA", "EQE", "EQS", "GLA", "GLC"]
+    },
+    {
+      "marca": "MINI",
+      "modelos": ["Cooper S", "Countryman", "John Cooper Works"]
+    },
+    {
+      "marca": "MITSUBISHI",
+      "modelos": ["Eclipse Cross", "L200 Triton", "Outlander", "Pajero Sport"]
+    },
+    {
+      "marca": "NETA",
+      "modelos": ["Neta V (Lançamento Expectativa)"]
+    },
+    {
+      "marca": "NISSAN",
+      "modelos": ["Frontier", "Kicks", "Sentra", "Versa"]
+    },
+    {
+      "marca": "OMODA",
+      "modelos": ["Omoda 5 (Lançamento Expectativa)"]
+    },
+    {
+      "marca": "PEUGEOT",
+      "modelos": ["208", "2008", "3008", "Boxer"]
+    },
+    {
+      "marca": "PORSCHE",
+      "modelos": ["911", "Cayenne", "Macan", "Panamera", "Taycan"]
+    },
+    {
+      "marca": "RAM",
+      "modelos": ["1500", "2500", "Rampage"]
+    },
+    {
+      "marca": "RENAULT",
+      "modelos": ["Duster", "Kwid", "Master", "Oroch", "Stepway", "Kardian", "Kangoo E-Tech"]
+    },
+    {
+      "marca": "ROLLS-ROYCE",
+      "modelos": ["Cullinan", "Ghost", "Phantom"]
+    },
+    {
+      "marca": "SERES",
+      "modelos": ["SERES 3", "SERES 5"]
+    },
+    {
+      "marca": "SUBARU",
+      "modelos": ["Forester", "Impreza", "XV"]
+    },
+    {
+      "marca": "SUZUKI",
+      "modelos": ["Jimny Sierra"]
+    },
+    {
+      "marca": "TESLA",
+      "modelos": ["Model 3 (Importação Não Oficial)", "Model Y (Importação Não Oficial)"]
+    },
+    {
+      "marca": "TOYOTA",
+      "modelos": ["Corolla", "Corolla Cross", "Hilux", "Prius", "RAV4", "SW4", "Yaris Hatch"]
+    },
+    {
+      "marca": "VOLKSWAGEN (VW)",
+      "modelos": ["Amarok", "Nivus", "Polo", "Saveiro", "T-Cross", "Taos", "Virtus"]
+    },
+    {
+      "marca": "VOLVO",
+      "modelos": ["C40 Recharge", "EX30", "EX90", "S60", "XC40", "XC60", "XC90"]
+    },
+    {
+      "marca": "ZEEKR",
+      "modelos": ["001 (Lançamento Expectativa)", "X (Lançamento Expectativa)"]
+    }
+  ],
+  "motos": [
+    {
+      "marca": "AVELLOZ",
+      "modelos": ["AZ-1", "AZ-1 Carga", "Ciclomotor 50cc"]
+    },
+    {
+      "marca": "BAJAJ",
+      "modelos": ["Dominar 160", "Dominar 200", "Dominar 400", "Pulsar N250"]
+    },
+    {
+      "marca": "BMW MOTORRAD",
+      "modelos": ["F 750 GS", "F 850 GS", "G 310 GS", "G 310 R", "R 1250 GS", "S 1000 RR", "Scooter C 400 X"]
+    },
+    {
+      "marca": "BULL",
+      "modelos": ["Bull Commuter", "Bull E-Bike"]
+    },
+    {
+      "marca": "DAFRA",
+      "modelos": ["Citycom S 300i", "Cruisym 150", "Maxsym 400i", "Zongshen Fiddle III 125"]
+    },
+    {
+      "marca": "DUCATI",
+      "modelos": ["Diavel", "Multistrada", "Panigale", "Scrambler", "Streetfighter"]
+    },
+    {
+      "marca": "GCX",
+      "modelos": ["GCX 150"]
+    },
+    {
+      "marca": "H.DAVIDSON (HARLEY-DAVIDSON)",
+      "modelos": ["Fat Boy", "Heritage Classic", "Low Rider S", "Nightster", "Pan America 1250", "Road Glide", "Street Glide"]
+    },
+    {
+      "marca": "HAOJUE",
+      "modelos": ["Chopper Road 150", "DK 150", "DR 160", "Master Ride 125", "NK 150", "TL 125", "VR 150"]
+    },
+    {
+      "marca": "HONDA",
+      "modelos": ["Biz 125", "CB 500F", "CG 160 Fan", "NXR 160 Bros", "PCX 160", "Pop 110i", "Sahara 300"]
+    },
+    {
+      "marca": "KAWASAKI",
+      "modelos": ["Eliminator 400", "Ninja 400", "Versys-X 300", "Versys 650", "Vulcan S", "Z400", "Z900"]
+    },
+    {
+      "marca": "MOTTU",
+      "modelos": ["Mottu Sport (Modelos de Locação)"]
+    },
+    {
+      "marca": "ROTOM",
+      "modelos": ["Modelos Elétricos de Scooter e Ciclomotores"]
+    },
+    {
+      "marca": "ROYAL ENFIELD",
+      "modelos": ["Classic 350", "Continental GT 650", "Himalayan", "Hunter 350", "Interceptor 650", "Meteor 350", "Super Meteor 650"]
+    },
+    {
+      "marca": "SHINERAY",
+      "modelos": ["Jet 50", "Phoenix", "SHI 175", "Worker 125", "XY 125"]
+    },
+    {
+      "marca": "SUZUKI",
+      "modelos": ["V-Strom 650", "Hayabusa"]
+    },
+    {
+      "marca": "TRIUMPH",
+      "modelos": ["Bonneville T120", "Rocket 3 R", "Scrambler 1200", "Speed Triple 1200 RR", "Street Triple 765", "Tiger 900 GT", "Trident 660"]
+    },
+    {
+      "marca": "VMOTO",
+      "modelos": ["F01", "TC Max"]
+    },
+    {
+      "marca": "WATTS",
+      "modelos": ["W125", "W160S"]
+    },
+    {
+      "marca": "YAMAHA",
+      "modelos": ["Crosser 150", "Fazer FZ15", "Fazer FZ25", "Lander 250", "MT-03", "NMax 160", "Neo 125"]
+    },
+    {
+      "marca": "ZONTES",
+      "modelos": ["350 E", "350 R", "T 310"]
+    }
+  ]
+}
