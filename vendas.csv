@@ -1,2 +1,3 @@
 ID,Tipo,Marca,Modelo,Ano,Cor,Quilometragem,Preco,is_featured,Caminho_Fotos,Preco_Formatado
-1,Carros,FIAT,Argo,2020,,0,50000,False,,
+1,Carros,FIAT,Argo,2020,,0,50000,False,,"R$ 50.000,00"
+2,Motos,YAMAHA,Crosser 150,2023,branco,0,50000,True,https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1401267632005846,
